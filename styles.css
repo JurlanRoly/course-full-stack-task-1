@@ -1,0 +1,62 @@
+/* Variables */
+:root {
+  --color-1: #e0f7fa;
+  --color-2: #00acc1;
+  --color-3: #00838f;
+  --color-4: #fff59d;
+  --color-5: #ef9a9a;
+  --color-5: #ce93d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: linear-gradient(
+    to right top,
+    var(--color-1),
+    #e9f8ff,
+    #f3faff,
+    #fafcff,
+    #ffffff
+  );
+  height: 100vh;
+}
+
+header nav {
+  overflow: auto;
+  padding: 25px;
+}
+
+header nav h1 {
+  color: var(--color-3);
+}
+
+header nav h3 {
+  color: var(--color-2);
+}
+
+.container {
+  padding: 25px;
+}
+
+h1,
+h5 {
+  padding-bottom: 5px;
+}
+
+.main-footer {
+  background-color: var(--color-2);
+  color: var(--color-1);
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  width: 100%;
+}
+
+.main-footer p {
+  float: left;
+}
