@@ -13,13 +13,23 @@
       </nav>
     </header>
     <main>
-      <div class="container">
-        <h5>Regiones</h5>
+      <div class="card">
+        <h3>Regiones</h3>
+        <hr />
+        <select id="region">
+          <option value="">Seleccione una region</option>
+        </select>
+        <button type="button" onclick="searchCoutrie()">Buscar</button>
+      </div>
+      <div class="card">
+        <h3>Paises</h3>
+        <hr />
+        <ul id="countrie"></ul>
       </div>
     </main>
     <footer class="main-footer">
       <p>Desarrolado por: Jhasmani Uriona | Roly Canaviri &copy;</p>
     </footer>
+    <script type="text/javascript" src="script.js"></script>
   </body>
-  <script type="text/javascript" src="script.js"></script>
 </html>

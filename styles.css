@@ -1,11 +1,11 @@
 /* Variables */
 :root {
+  --color-0: #ffffff;
   --color-1: #e0f7fa;
   --color-2: #00acc1;
   --color-3: #00838f;
-  --color-4: #fff59d;
-  --color-5: #ef9a9a;
-  --color-5: #ce93d8;
+  --color-4: #545d68;
+  --color-8: #dee2e6;
 }
 
 * {
@@ -23,24 +23,22 @@ html {
     #fafcff,
     #ffffff
   );
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header nav {
+  background-color: var(--color-2);
   overflow: auto;
   padding: 25px;
 }
 
 header nav h1 {
-  color: var(--color-3);
+  color: var(--color-0);
+  font-weight: bold;
 }
 
 header nav h3 {
-  color: var(--color-2);
-}
-
-.container {
-  padding: 25px;
+  color: var(--color-1);
 }
 
 h1,
@@ -48,10 +46,14 @@ h5 {
   padding-bottom: 5px;
 }
 
+main {
+  margin-bottom: 50px;
+}
+
 .main-footer {
-  background-color: var(--color-2);
-  color: var(--color-1);
-  position: absolute;
+  background-color: var(--color-1);
+  color: var(--color-3);
+  position: fixed;
   bottom: 0;
   padding: 25px;
   width: 100%;
@@ -59,4 +61,96 @@ h5 {
 
 .main-footer p {
   float: left;
+}
+
+select,
+button {
+  display: inline;
+  padding: 10px;
+  border: 1px solid var(--color-8);
+}
+
+button {
+  background-color: var(--color-4);
+  color: var(--color-0);
+}
+
+select:hover {
+  border-color: var(--color-3);
+  box-shadow: 2px 2px 5px var(--color-8);
+}
+
+button:hover {
+  background-color: var(--color-3);
+  border-color: var(--color-3);
+  box-shadow: 2px 2px 5px var(--color-8);
+}
+
+.card {
+  background-color: var(--color-0);
+  padding: 1.5rem;
+  box-shadow: 0 2px 1px -1px var(--color-8);
+  border-radius: 4px;
+  margin: 1.5rem;
+}
+
+.card h3 {
+  padding: 0.5rem 0 0.5rem 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.card ul li div img {
+  width: 20px;
+  height: 20px;
+}
+
+.card ul {
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.card ul li {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--color-8);
+  cursor: pointer;
+}
+
+.card ul li q {
+  color: var(--color-4);
+  font-style: italic;
+}
+
+.card ul li q::before {
+  content: '\A';
+  white-space: pre;
+}
+
+hr {
+  border: 0.05rem solid var(--color-8);
+  margin-bottom: 0.8rem;
+}
+
+.detail {
+  border-top: 0.05rem solid var(--color-3);
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.detail p {
+  height: 2rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.detail p:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.detail p b {
+  padding-right: 0.5rem;
 }
